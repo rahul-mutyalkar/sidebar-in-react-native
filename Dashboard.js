@@ -38,9 +38,9 @@ export default class Dashboard extends React.Component {
         // console.log('render :',this.state)
                 return (
                     <View style={{ flex: 1, backgroundColor: '#fff',justifyContent:'center',alignItems:'center' }}>
-                        <Text onPress={()=>{
-                            this.openMenu()
-                        }}>aaaaa</Text>
+                    <TouchableOpacity style={{borderWidth:1,padding:10,width:100,textAlign:'center'}} onPress={()=>{this.openMenu()}}>
+                        <Text style={{textAlign:'center'}}>open menu</Text>
+                    </TouchableOpacity>
                   </View>   
         );
     }
